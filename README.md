@@ -23,7 +23,7 @@
 
 
 #### Enalces utiles
-
+- https://www.blackbox.ai/
 - https://pixabay.com/
 - https://fonts.google.com/
 - https://fontawesome.com/
