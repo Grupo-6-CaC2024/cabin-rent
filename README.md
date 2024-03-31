@@ -18,6 +18,7 @@
 - Al menos 60% del trabajo bien hecho
 - Cargado en la plataforma
 - Enlace de la versión navegable del sitio web
+- Enlace del repositorio
 - Lista de integrantes + comentarios (opcional)
 
 
