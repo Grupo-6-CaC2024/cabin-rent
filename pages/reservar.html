@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HaceTuReserva</title> 
+</head>
+<body>
+    <h1>Hace Tu Reserva</h1>
+    <p>Tu lugar en el bosque... A un paso del mar</p>
+    <nav>
+        <ul>
+            <li><a href="../index.html" target="_blank" >Inicio</a></li>
+            <li><a href="Quienes_somos.html">Quienes Somos</a>></li>
+            <li><a href="Nuestros_Servicios.html">Nuestros Servicios</a></li>
+            <li>Hace tu Reserva</li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <h3>
+        <li>Check In 13:00 hs., Check Out 10:00 hs.</li>
+        <li>La reserva se realiza mediante un depósito o transferencia bancaria del 50% del valor total de la estadía. El saldo se  abona de contado durante el Check In.</li> </h3>
+        <header>
+            <main>
+                <section>
+                    <form action="" method="post" target="_blank">
+                       
+                        <fieldset>
+                            <legend> Datos Personales </legend> 
+                            <label for="nombre">Nombre * </label>
+                            <input type="text" id="nombre" name="nombre" size="12" maxlength="15" required placeholder="Ej:Juan">
+                            <label for="Apellido">Apellido * </label>
+                            <input type="text" id="apellido" name="Apellido" size="12" maxlength="15" required placeholder="Ej:Perez">
+                            <br><br>
+                            <label for="DNI">DNI*</label>
+                            <input type="number" id="DNI" name="DNI" min="1000000" maxlength="15" required>
+                            <br><br>
+                            <label for="email">E-mail*</label>
+                            <input type="text" id="email" name="email" size="12" maxlength="20" required>
+                            <br><br>
+                            <label for="fecNac">Fecha de Nacimiento*</label>
+                            <input type="date" name="fech de Nacimiento" size="12" required>
+                            
+                        </fieldset>
+                        <br><br>
+                        <fieldset>
+                            <legend>Elegí tu experiencia</legend>
+                            <label for="fechaingreso">Fecha de Ingreso*</label>
+                            <input type="date" name="fechaingreso" id="fechaingreso" required>
+                            <label for="fechasalida">Fecha de Salida*</label>
+                            <input type="date" name="fechasalida" id="fechasalida" required>
+                            <br><br>
+                            <label for="tipoCabaña">Tipo de Cabaña*</label>
+                            <select name="tipoCabaña" id="tipoCabaña" required> 
+                                <option value="Cabaña1">Cabaña 1</option>
+                                <option value="Cabaña2">Cabaña 2</option>
+                                <option value="Cabaña3">Cabaña 3</option>
+                                <option value="Cabaña4">Cabaña 4</option>
+
+                            </select>               
+                             
+                        </fieldset>
+                        <br><br>
+                        <fieldset>
+                            <legend>Aboná tu reserva</legend>
+                            <label for="formapago">Forma de Pago*</label>
+                            <select name="formapago" id="formapago" required>
+                                <option value="transferencia">Transferencia Bancaria</option>
+                                <option value="deb/cred">Débito/Crédito</option>
+                                <option value="MP">Mercado Pago</option>
+                             
+                            </select>
+                             
+                             
+                        </fieldset>
+                    </form>
+                </section>
+            </main>
+        </header>
