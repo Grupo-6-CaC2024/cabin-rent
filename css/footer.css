@@ -1,0 +1,26 @@
+footer {
+    background-color: black;
+    color:white;
+}
+.social {
+    display:flex;
+    padding:1rem;
+    justify-content:center;
+}
+.social i {
+    color:white;
+}
+.social a {
+    padding: 0 1rem;
+}
+.social a:hover{
+    transform:scale(1.2);
+    transition: transform 0.3s ease;
+}
+.social a:hover {
+    color:blue;
+}
+.copyright {
+    text-align:center;
+    padding-bottom:1rem;
+}

@@ -5,70 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Alquiler de cabañas">
     <meta name="keywords" content="alquiler, cabaña, argentina">
-    <meta name="robots" content="noindex,nofollow">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- El css de esta pagina -->
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/cabecera.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/footer.css">
 
     <!-- fontawsome -->
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="css/brands.min.css">
 
     <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-    <!-- El css de esta pagina -->
-    <link rel="stylesheet" href="css/principal.css">
 
-    <!-- https://stackoverflow.com/questions/1373142/preloading-css-images -->
-    <link rel="preload" as="image" href="../images/fondo.jpg">
-    <link rel="preload" as="image" href="../images/caba1.jpg">
-    <link rel="preload" as="image" href="../images/caba2.jpg">
-    <link rel="preload" as="image" href="../images/caba3.jpg">
-    <link rel="preload" as="image" href="../images/caba4.jpg">
-
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Alquiler Cabañas</title>
 </head>
 <body>
-    <div class="page">
-        <header>
-            <hgroup class="cabecera">
-                <h1>Alquiler de Cabañas</h1>
-            </hgroup>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="pages/cabanias.html">Cabañas</a></li>
-                    <li><a href="pages/reservar.html">Reservar</a></li><!-- en la paginas reeplazar por ../pages -->
-                    <li><a href="pages/contacto.html">Contacto</a></li><!-- formulario de consulta -->
-                    <!-- agregar los enlaces que quiera aqui -->
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <div class="carrusel"></div>
-             <h2 class="leyenda">
-                Contamos con la mas exquisita variedad de cabañas en los mas exclusivos paisajes, ideal para disfrutar en familia o en pareja. <b>Satifacción garantizada!</b>
+    <header>
+        <nav class="navbar">
+            <a class="navbar-link" href="index.html">Home</a>
+            <a class="navbar-link" href="pages/cabanias.html">Caba&ntilde;as</a>
+            <a class="navbar-link" href="pages/reservar.html">Reservar</a>
+            <a class="navbar-link" href="pages/contacto.html">Contacto</a><!-- formulario de consulta, mandatorio -->
+            <!-- agregar los enlaces que quiera aqui -->
+        </nav>
+        <hgroup class="title">
+            <h1>Alquiler de Cabañas</h1>
+            <h2>
+                Contamos con la mas exquisita variedad de caba&ntilde;as en los mas exclusivos paisajes, ideal para disfrutar en familia o en pareja. Satifacci&oacute;n garantizada!
             </h2>
-        </main>
-        <footer>
-            <div class="social">
-                <ul>
-                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-mastodon"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-discord"></i></a></li>
-                </ul>
+        </hgroup>
+    </header>
+    <main>
+        <section class="comodo">
+            <h2 class="section-title">Ambientes comodos y amueblados</h2>
+
+            <!-- esto es carrusel animado tomado de bootstrap -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/comodos.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/amueblados.jpg" class="d-block w-100">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <div class="copyright">
-                <p>Los recursos utilizados y las paginas enlazadas pertenecen a sus respectivos autores<p>
-                <p>&copy;2024</p>
+        </section>
+        <section class="promo">
+            <h2 class="section-title">Promoci&oacute;n!</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="images/caba4.jpg" aria-label="Cabaña rustica">
+                    <h3>5 USD/noche</h3>
+                </div>
+                <div class="card">
+                    <img src="images/caba2.jpg" aria-label="Cabaña con fondo bosque">
+                    <h3>15 USD/noche</h3>
+
+                </div>
+                <div class="card">
+                    <img src="images/caba1.jpg" aria-label="Cabaña con fondo de nieve">
+                    <h3>30 USD/noche</h3>
+                </div>
             </div>
-        </footer>
-    </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-mastodon"></i></a>
+            <a href=""><i class="fa-brands fa-telegram"></i></a>
+            <a href=""><i class="fa-brands fa-discord"></i></a>
+        </div>
+        <div class="copyright">
+            <p>Los recursos utilizados y las paginas enlazadas pertenecen a sus respectivos autores<p>
+            <p>&copy;2024</p>
+        </div>
+    </footer>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
